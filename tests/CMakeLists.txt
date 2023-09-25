@@ -5,12 +5,14 @@ enable_testing()
 set(TESTS_SOURCE_DIR src)
 
 set(TESTS_SOURCE_CODES
-    ${TESTS_SOURCE_DIR}/main.cpp)
+    ${TESTS_SOURCE_DIR}/main.cpp
+    ${TESTS_SOURCE_DIR}/test_SimpleBalancer.cpp)
 
 add_executable(${TESTS_TARGET_NAME} ${TESTS_SOURCE_CODES})
 
 target_link_libraries(${TESTS_TARGET_NAME}
     GTest::gtest_main
+    GTest::gmock_main
 )
 
 set_target_properties(${TESTS_TARGET_NAME} PROPERTIES
