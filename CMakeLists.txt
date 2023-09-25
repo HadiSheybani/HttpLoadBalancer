@@ -22,3 +22,5 @@ if (BUILD_WITH_TESTS)
 
     add_subdirectory(tests)
 endif()
+
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ TYPE INCLUDE)
