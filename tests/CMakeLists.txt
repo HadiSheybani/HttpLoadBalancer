@@ -6,7 +6,8 @@ set(TESTS_SOURCE_DIR src)
 
 set(TESTS_SOURCE_CODES
     ${TESTS_SOURCE_DIR}/main.cpp
-    ${TESTS_SOURCE_DIR}/test_SimpleBalancer.cpp)
+    ${TESTS_SOURCE_DIR}/test_SimpleBalancer.cpp
+    ${TESTS_SOURCE_DIR}/test_SimpleBroker.cpp)
 
 add_executable(${TESTS_TARGET_NAME} ${TESTS_SOURCE_CODES})
 
